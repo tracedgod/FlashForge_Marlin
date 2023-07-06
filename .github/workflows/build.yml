@@ -462,6 +462,6 @@ jobs:
             - name: Upload Binaries Artifact
               uses: actions/upload-artifact@v3
               with:
-                name: marlin_${{ steps.firmware.outputs.fw_version }}_${{ steps.firmware.outputs.target_ui }}_${{ steps.date.outputs.timestamp }}
+                name: marlin_${{ steps.firmware.outputs.fw_version }}_${{ steps.firmware.outputs.target_ui }}_${{ steps.date.outputs.timestamp }}.zip
                 path: build/*.bin
                 retention-days: 5
